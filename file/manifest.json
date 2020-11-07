@@ -1,12 +1,14 @@
 {
   "manifest_version": 2,
 
-  "name": "Hello World!", 
-  "description": "Hello",
+  "name": "Macro extenstion", 
+  "description": "A macro to automate your task",
   "version" : "1.0",
   "browser_action": {
-      "default_icon": "icon.png",
       "default_popup": "popup.html"
+  },
+  "background":{
+        "scripts" : ["js/main.js"]
   },
   "permissions": [
       "activeTab"
