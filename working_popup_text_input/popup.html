@@ -1,0 +1,59 @@
+<!doctype html>
+<html>
+    <style type="text/css">
+    body {
+        min-width: 300px; /* your desired width */
+        max-width: 100%;
+        position: relative;
+        vertical-align:middle;
+    }
+
+    .center {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 33.33%;
+    }
+
+    </style>
+
+    <head>
+        <link rel="stylesheet" href="styles.css">
+    </head>
+
+    <body>
+
+        <!-- Play, Rec and Stop buttons and their labels-->
+        <table style="width:100%;">
+            <tr>
+                <td><input type="image" src="playButton.png" name="play" id="play" style="width:50px;height:50px;" class = "center"/></td>  <!--class="btTxt submit" -->
+                <td><input type="image" src="recordButton.png" name="record" id="record" style="width:50px;height:50px;" class = "center"/></td>  <!--class="btTxt submit" -->
+                <td><input type="image" src="stopButton.png" name="stop" id="stop" style="width:50px;height:50px;" class = "center"/></td>  <!--class="btTxt submit" -->
+            </tr>
+            <tr>
+              <td style="text-align:center">Play</td>
+              <td style="text-align:center">Record</td>
+              <td style="text-align:center">Stop</td>
+            </tr>
+          </table>
+
+        <!-- Existing macros section-->
+        <table style="width:100%;">
+            <tr><h1 style = "text-align:center">Existing Macros</h1></tr>
+            <tr><h3 style = "text-align:center">Example Macro 1</h3></tr> <!--This is a place holder example macro-->
+            <tr><h3 style = "text-align:center">Example Macro 2</h3></tr> <!--This is a place holder example macro-->
+        </table>
+
+        <!-- Edit and Delete Buttons-->
+        <table style="width:100%;">
+            <tr>
+                <td><input type="image" src="editButton.png" name="saveForm" id="edit" style="width:85px;height:50px;" class = "center"/></td>  <!--class="btTxt submit" -->
+                <td><input type="image" src="deleteButton.png" name="saveForm" id="del" style="width:85px;height:50px;" class = "center"/></td>  <!--class="btTxt submit" -->
+            </tr>
+        </table>
+        <script 
+            src="background.js">
+        </script>
+    </body>
+</html>
+
