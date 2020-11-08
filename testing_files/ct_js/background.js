@@ -10,4 +10,5 @@ function buttonClicked(tab){
 
     // (target tab, message)
     chrome.tabs.sendMessage(tab.id, msg);
+    console.log("button Pressed");
 }
