@@ -1,3 +1,5 @@
+// only works when you select the popup window and type in text
+
 let stringStorage = '';
 
 document.getElementById("play").addEventListener('click',play);
