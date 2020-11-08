@@ -16,9 +16,8 @@ function messageSender(){
     function gotTabs(tabs){
         console.log("Sending message: " + message.txt);
         console.log("Tabs:", tabs[0].id);
-        chrome.tabs.sendMessage(tabs[0].id, message);
+        chrome.tabs.sendMessage(tabs[0].id, message); // sent tab id and message to content??
     }
-
 }
 
 // when message recieved, output it

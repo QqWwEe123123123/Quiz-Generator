@@ -7,7 +7,7 @@ function logKey (keyPressed){
 }
 
 // sender
-function messageSender(){
+function messageSender(sender){
 
     let params = {
         active : true,
@@ -21,8 +21,8 @@ function messageSender(){
     chrome.tabs.query(params, gotTabs);
 
     function gotTabs(tabs){
-        console.log("Sending message:" + returning.rtn)
-        chrome.tabs.sendMessage(tabs[0].id, returning);
+        console.log("Sending message:" + returning.rtn);
+        chrome.tabs.sendMessage(sender.tab.id, returning);
     }
 
 }
@@ -39,7 +39,6 @@ function gotMessage(message, sender, sendResponse){
     }
     else if (message == "stop"){
         document.removeEventListener('keypress', logKey);
-        messageSender();
+        messageSender(sender);
     }
-
 }
