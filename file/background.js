@@ -14,9 +14,10 @@ function record(){ // record button pressed
 function stop(){ // stop button pressed
     console.log("stop pressed");
 }
-function edit(){
+function edit(){ // edit button pressed
     console.log ("edit pressed");
 }
-function del(){
+function del(){ // delete button pressed
     console.log("delete pressed");
 }
+
