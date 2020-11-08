@@ -1,6 +1,6 @@
 {
   "manifest_version": 2, 
-  "name": "Macro extenstion", 
+  "name": "Macro extenstion++", 
   "description": "A macro to automate your task",
   "version" : "0.1.0",
   "browser_action": {
@@ -20,6 +20,6 @@
       "scripts":["background.js"]
   },
   "permissions" : [
-      "storage"
+      "tabs"
   ]
 }
