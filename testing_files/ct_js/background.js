@@ -8,5 +8,6 @@ function buttonClicked(tab){
         txt : "hello"
     }
 
+    // (target tab, message)
     chrome.tabs.sendMessage(tab.id, msg);
 }

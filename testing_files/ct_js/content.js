@@ -3,7 +3,7 @@ console.log("YESSSSSSSSSS");
 
 
 chrome.runtime.onMessage.addListener( function(message, sender, sendResponse) {
-    console.log(message.txt);
+    console.log("Image was clicked" + " " + message.txt);
 
     if (message.txt == "hello"){
         let paragraphs = document.getElementsByTagName('p');
@@ -11,6 +11,6 @@ chrome.runtime.onMessage.addListener( function(message, sender, sendResponse) {
         for (elt of paragraphs){
             elt.style['background-color'] = '#FF00FF';
         }
-        console.log("Changing bg color to pink!")
+        console.log("Changing bg color to pink!");
     }
 })
