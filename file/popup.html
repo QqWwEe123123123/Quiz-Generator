@@ -1,22 +1,58 @@
 <!doctype html>
 <html>
+    <style type="text/css">
+    body {
+        min-width: 300px; /* your desired width */
+        max-width: 100%;
+        position: relative;
+        vertical-align:middle;
+    }
+
+    .center {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 33.33%;
+    }
+
+    </style>
+
     <head>
-        <style type="text/css">
-        body{
-            margin: 0px;
-            padding: 0px;
-            font-family: Arial, Helvetica, sans-serif;
-        }
-        .popupContainerDiv{
-            width:250px;
-            min-height: 150px;
-            max-height: 550px;
-        }
-        </style>
+        <link rel="stylesheet" href="styles.css">
     </head>
+
     <body>
-        <div class="popupContainerDiv">
-            <h1>This is my popup</h1>
-        </div>
+
+        <!-- Play, Rec and Stop buttons and their labels-->
+        <table style="width:100%;">
+            <tr>
+                <td><input type="image" src="playButton.png" name="saveForm" id="saveForm" style="width:50px;height:50px;" class = "center"/></td>  <!--class="btTxt submit" -->
+                <td><input type="image" src="recordButton.png" name="saveForm" id="saveForm" style="width:50px;height:50px;" class = "center"/></td>  <!--class="btTxt submit" -->
+                <td><input type="image" src="stopButton.png" name="saveForm" id="saveForm" style="width:50px;height:50px;" class = "center"/></td>  <!--class="btTxt submit" -->
+            </tr>
+            <tr>
+              <td style="text-align:center">Play</td>
+              <td style="text-align:center">Record</td>
+              <td style="text-align:center">Stop</td>
+            </tr>
+          </table>
+
+        <!-- Existing macros section-->
+        <table style="width:100%;">
+            <tr><h1 style = "text-align:center">Existing Macros</h1></tr>
+            <tr><h3 style = "text-align:center">Example Macro 1</h3></tr> <!--This is a place holder example macro-->
+            <tr><h3 style = "text-align:center">Example Macro 2</h3></tr> <!--This is a place holder example macro-->
+        </table>
+
+        <!-- Edit and Delete Buttons-->
+        <table style="width:100%;">
+            <tr>
+                <td><input type="image" src="editButton.png" name="saveForm" id="saveForm" style="width:85px;height:50px;" class = "center"/></td>  <!--class="btTxt submit" -->
+                <td><input type="image" src="deleteButton.png" name="saveForm" id="saveForm" style="width:85px;height:50px;" class = "center"/></td>  <!--class="btTxt submit" -->
+
+            </tr>
+          </table>
+
     </body>
 </html>
+
